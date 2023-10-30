@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Dialog } from '../../_models/dialog';
 
 @Component({
   selector: 'app-dialog-box',
@@ -9,8 +10,9 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./dialog-box.component.css']
 })
 export class DialogBoxComponent {
-  @Input() dialogInput: string[] = [];
+  @Input() dialogInput: Dialog[] = [];
   dialogIndex: number = 1;
+  name: string = "";
   dialog: string = "";
   isWritingDialog: boolean = false;
 
@@ -21,7 +23,9 @@ export class DialogBoxComponent {
   writeDialog() {
     this.isWritingDialog = true;
     this.dialog = "";
-    const charArray = this.dialogInput[this.dialogIndex - 1].split('');
+    
+    this.name = this.dialogInput.find(x => x.index === this.dialogIndex)!.name;
+    const charArray = this.dialogInput.find(x => x.index === this.dialogIndex)!.text.split('');
     charArray.forEach((char, index) => {
       setTimeout(() => {
         this.dialog = this.dialog + char;

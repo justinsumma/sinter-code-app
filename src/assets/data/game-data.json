@@ -3,17 +3,41 @@
         {
             "id": 1,
             "dialogs": [
-                "This is the first dialog of scene 1...",
-                "This is the second dialog of scene 1...",
-                "This is the third dialog of scene 1..."
+                {
+                    "index": 1,
+                    "text": "This is the first dialog of scene 1...",
+                    "name": "Sinterklaas"
+                },
+                {
+                    "index": 2,
+                    "text": "This is the second dialog of scene 1...",
+                    "name": "Piet"
+                },
+                {
+                    "index": 3,
+                    "text": "This is the third dialog of scene 1...",
+                    "name": "Sinterklaas"
+                }
             ] 
         },
         {
             "id": 2,
             "dialogs": [
-                "This is the first dialog of scene 2...",
-                "This is the second dialog of scene 2...",
-                "This is the third dialog of scene 2..."
+                {
+                    "index": 1,
+                    "text": "This is the first dialog of scene 2...",
+                    "name": "Piet"
+                },
+                {
+                    "index": 2,
+                    "text": "This is the second dialog of scene 2...",
+                    "name": "Sinterklaas"
+                },
+                {
+                    "indexd": 3,
+                    "text": "This is the first dialog of scene 2...",
+                    "name": "Piet"
+                }
             ]
         }
     ],
