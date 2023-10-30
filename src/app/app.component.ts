@@ -1,8 +1,7 @@
-import { Component, effect } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { GameService } from './_services/game.service';
-import { Game } from './_models/game';
 import { SceneComponent } from './_components/scene/scene.component';
 
 @Component({
