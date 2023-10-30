@@ -1,0 +1,12 @@
+.dialog-box {
+    padding: 14px;
+    width: 100%;
+    height: 20vh;
+    border: solid 3px #845615;
+    box-sizing: border-box;
+    background-color: #F0CFA0;
+}
+
+p {
+    margin: 0;
+}

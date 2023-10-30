@@ -1,0 +1,21 @@
+{
+    "scenes": [
+        {
+            "id": 1,
+            "dialogs": [
+                "This is the first dialog of scene 1...",
+                "This is the second dialog of scene 1...",
+                "This is the third dialog of scene 1..."
+            ] 
+        },
+        {
+            "id": 2,
+            "dialogs": [
+                "This is the first dialog of scene 2...",
+                "This is the second dialog of scene 2...",
+                "This is the third dialog of scene 2..."
+            ]
+        }
+    ],
+    "currentScene": 1
+}

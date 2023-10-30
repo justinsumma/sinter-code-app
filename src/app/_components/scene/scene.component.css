@@ -1,0 +1,15 @@
+.scene {
+    display: grid;
+    grid-template-columns: 14px auto 14px;
+    grid-template-rows: 14px auto min-content 14px;
+    width: 100%;
+    height: 100%;
+}
+
+app-dialog-box {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-self: center;
+}

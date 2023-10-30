@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'AncientModernTales';
+    src: url('assets/fonts/AncientModernTales-a7Po.ttf');
+}
+
+* {
+    margin: 0;
+    font-family: 'AncientModernTales';
+}
