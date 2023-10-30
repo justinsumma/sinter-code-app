@@ -1,5 +1,7 @@
+import { Character } from "./character";
+
 export interface Dialog {
     index: number;
     text: string;
-    name: string;
+    character: Character;
 }

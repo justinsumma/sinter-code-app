@@ -27,7 +27,11 @@ export class SceneComponent {
     })
   }
 
-  toggleCharacter() {
-    this.character?.toggle();
+  showCharacter() {
+    this.character?.show();
+  }
+
+  hideCharacter() {
+    this.character?.hide();
   }
 }

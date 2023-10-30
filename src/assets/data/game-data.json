@@ -6,17 +6,24 @@
                 {
                     "index": 1,
                     "text": "This is the first dialog of scene 1...",
-                    "name": "Sinterklaas"
+                    "character": {
+                        "id": 1,
+                        "name": "Sinterklaas",
+                        "image": null
+                    }
                 },
                 {
                     "index": 2,
-                    "text": "This is the second dialog of scene 1...",
-                    "name": "Piet"
+                    "text": "This is the second dialog of scene 1..."
                 },
                 {
                     "index": 3,
                     "text": "This is the third dialog of scene 1...",
-                    "name": "Sinterklaas"
+                    "character": {
+                        "id": 2,
+                        "name": "Piet",
+                        "image": null
+                    }
                 }
             ] 
         },
@@ -26,17 +33,29 @@
                 {
                     "index": 1,
                     "text": "This is the first dialog of scene 2...",
-                    "name": "Piet"
+                    "character": {
+                        "id": 2,
+                        "name": "Piet",
+                        "image": null
+                    }
                 },
                 {
                     "index": 2,
                     "text": "This is the second dialog of scene 2...",
-                    "name": "Sinterklaas"
+                    "character": {
+                        "id": 1,
+                        "name": "Sinterklaas",
+                        "image": null
+                    }
                 },
                 {
                     "indexd": 3,
                     "text": "This is the first dialog of scene 2...",
-                    "name": "Piet"
+                    "character": {
+                        "id": 2,
+                        "name": "Piet",
+                        "image": null
+                    }
                 }
             ]
         }

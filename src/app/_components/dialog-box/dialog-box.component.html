@@ -1,6 +1,6 @@
 <div class="dialog-box" (click)="next()">
-    <div class="name">
-        {{ name }}
+    <div *ngIf="character" class="name">
+        {{ character.name }}
     </div>
     <div class="dialog">
         <p>{{ dialog }}</p>

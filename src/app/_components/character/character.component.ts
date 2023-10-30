@@ -18,9 +18,13 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   ],
 })
 export class CharacterComponent {
-  show: boolean = true;
+  isShown: boolean = false;
 
-  toggle() {
-    this.show = !this.show;
+  show() {
+    this.isShown = true;
+  }
+
+  hide() {
+    this.isShown = false;
   }
 }
