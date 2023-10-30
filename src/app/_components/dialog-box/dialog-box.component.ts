@@ -1,16 +1,18 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Dialog } from '../../_models/dialog';
 import { Character } from '../../_models/character';
+import { CharacterComponent } from '../character/character.component';
 
 @Component({
   selector: 'app-dialog-box',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, CharacterComponent],
   templateUrl: './dialog-box.component.html',
   styleUrls: ['./dialog-box.component.css']
 })
 export class DialogBoxComponent {
+  @ViewChild('characterComponent') characterComponent?: CharacterComponent;
   @Input() dialogInput: Dialog[] = [];
   dialogIndex: number = 1;
   name: string = "";
@@ -19,7 +21,9 @@ export class DialogBoxComponent {
   isWritingDialog: boolean = false;
 
   ngOnInit() {
-    this.writeDialog();
+    setTimeout(() => {
+      this.writeDialog();
+    }, 500);
   }
   
   writeDialog() {
@@ -27,6 +31,10 @@ export class DialogBoxComponent {
     this.dialog = "";
     
     this.character = this.dialogInput.find(x => x.index === this.dialogIndex)!.character;
+    if (this.character) {
+      this.characterComponent?.show();
+    }
+
     const charArray = this.dialogInput.find(x => x.index === this.dialogIndex)!.text.split('');
     charArray.forEach((char, index) => {
       setTimeout(() => {
@@ -41,7 +49,11 @@ export class DialogBoxComponent {
   next() {
     if (!this.isWritingDialog && this.dialogIndex < this.dialogInput.length) {
       this.dialogIndex++;
-      this.writeDialog()
+      this.characterComponent?.hide();
+
+      setTimeout(() => {
+        this.writeDialog()
+      }, 400);
     }
   }
 }

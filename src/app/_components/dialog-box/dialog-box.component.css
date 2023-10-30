@@ -26,6 +26,7 @@
     border: solid 3px #845615;
     box-sizing: border-box;
     background-color: #F0CFA0;
+    z-index: inherit;
 }
 
 .dialog-arrow {

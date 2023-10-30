@@ -8,15 +8,13 @@ import { CharacterComponent } from '../character/character.component';
 @Component({
   selector: 'app-scene',
   standalone: true,
-  imports: [CommonModule, DialogBoxComponent, CharacterComponent],
+  imports: [CommonModule, DialogBoxComponent],
   templateUrl: './scene.component.html',
   styleUrls: ['./scene.component.css']
 })
 export class SceneComponent {
-  @ViewChild('character') character?: CharacterComponent;
   game = this.gameService.getGameData();
   scene: Scene | null = null;
-  show: boolean = false;
 
   constructor(private gameService: GameService) {
     effect(() => {
@@ -25,13 +23,5 @@ export class SceneComponent {
         this.scene = this.game()?.scenes.find((x) => x.id === currentScene)!;
       }
     })
-  }
-
-  showCharacter() {
-    this.character?.show();
-  }
-
-  hideCharacter() {
-    this.character?.hide();
   }
 }
