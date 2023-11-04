@@ -9,7 +9,7 @@
                     "character": {
                         "id": 1,
                         "name": "Sinterklaas",
-                        "image": null
+                        "image": "./assets/images/sint.jpg"
                     }
                 },
                 {
@@ -22,7 +22,7 @@
                     "character": {
                         "id": 2,
                         "name": "Piet",
-                        "image": null
+                        "image": "./assets/images/piet.jpg"
                     }
                 }
             ] 

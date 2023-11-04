@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { Character } from '../../_models/character';
 
 @Component({
   selector: 'app-character',
@@ -18,6 +19,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   ],
 })
 export class CharacterComponent {
+  @Input() character: Character | null = null;
   isShown: boolean = false;
 
   show() {
