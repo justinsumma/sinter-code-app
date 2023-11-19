@@ -1,8 +1,9 @@
-import { Component, Input, ViewChild } from '@angular/core';
+import { Component, ViewChild, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Dialog } from '../../_models/dialog';
 import { Character } from '../../_models/character';
 import { CharacterComponent } from '../character/character.component';
+import { GameService } from '../../_services/game.service';
 
 @Component({
   selector: 'app-dialog-box',
@@ -13,17 +14,24 @@ import { CharacterComponent } from '../character/character.component';
 })
 export class DialogBoxComponent {
   @ViewChild('characterComponent') characterComponent?: CharacterComponent;
-  @Input() dialogInput: Dialog[] = [];
+  dialogInput: Dialog[] = [];
   dialogIndex: number = 1;
   name: string = "";
   dialog: string = "";
   character: Character | null = null;
   isWritingDialog: boolean = false;
 
-  ngOnInit() {
-    setTimeout(() => {
-      this.writeDialog();
-    }, 500);
+  constructor(private gameService: GameService) {
+    effect(() => {
+      if (this.gameService.currentScene()) {
+        this.dialogInput = this.gameService.currentScene()!.dialogs;
+        this.dialogIndex = 1;
+        
+        setTimeout(() => {
+          this.writeDialog();
+        }, 500);
+      }
+    })
   }
   
   writeDialog() {
