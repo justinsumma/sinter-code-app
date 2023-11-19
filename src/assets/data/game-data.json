@@ -36,7 +36,7 @@
                     "character": {
                         "id": 2,
                         "name": "Piet",
-                        "image": null
+                        "image": "./assets/images/piet.jpg"
                     }
                 },
                 {
@@ -45,20 +45,19 @@
                     "character": {
                         "id": 1,
                         "name": "Sinterklaas",
-                        "image": null
+                        "image": "./assets/images/sint.jpg"
                     }
                 },
                 {
-                    "indexd": 3,
+                    "index": 3,
                     "text": "This is the first dialog of scene 2...",
                     "character": {
                         "id": 2,
                         "name": "Piet",
-                        "image": null
+                        "image": "./assets/images/piet.jpg"
                     }
                 }
             ]
         }
-    ],
-    "currentScene": 1
+    ]
 }

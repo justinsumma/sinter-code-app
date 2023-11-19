@@ -1,9 +1,7 @@
-import { Component, ViewChild, effect } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DialogBoxComponent } from '../dialog-box/dialog-box.component';
-import { Scene } from '../../_models/scene';
 import { GameService } from '../../_services/game.service';
-import { CharacterComponent } from '../character/character.component';
 
 @Component({
   selector: 'app-scene',
@@ -13,15 +11,9 @@ import { CharacterComponent } from '../character/character.component';
   styleUrls: ['./scene.component.css']
 })
 export class SceneComponent {
-  game = this.gameService.getGameData();
-  scene: Scene | null = null;
+  constructor(private gameService: GameService) { }
 
-  constructor(private gameService: GameService) {
-    effect(() => {
-      if (this.game()) {
-        let currentScene = this.game()!.currentScene;
-        this.scene = this.game()?.scenes.find((x) => x.id === currentScene)!;
-      }
-    })
+  nextScene() {
+    this.gameService.nextScene();
   }
 }
