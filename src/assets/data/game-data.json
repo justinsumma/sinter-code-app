@@ -15,43 +15,25 @@
                 },
                 {
                     "index": 2,
-                    "text": "This is the second dialog of scene 1...",
-                    "isQuestion": false
-                },
-                {
-                    "index": 3,
-                    "text": "This is the third dialog of scene 1...",
-                    "character": {
-                        "id": 2,
-                        "name": "Piet",
-                        "image": "./assets/images/piet.jpg"
-                    },
-                    "isQuestion": false
-                },
-                {
-                    "index": 4,
-                    "text": "This the question of scene 1...",
+                    "text": "Piet heeft een digitaal slot op zijn voordeur. Welk van de volgende Java snippets zou kunnen worden gebruikt om het slot te omzeilen en toegang te krijgen?",
                     "isQuestion": true
                 }
             ],
             "question": {
                 "options": [
                     {
-                        "id": 1,
                         "title": "Answer 1",
-                        "answer": "This is answer 1",
-                        "isCorrect": true
-                    },
-                    {
-                        "id": 2,
-                        "title": "Answer 2",
-                        "answer": "This is answer 2",
+                        "answer": "boolean doorUnlocked = true; if (doorUnlocked) { System.out.println(\"Access Granted\"); } else { System.out.println(\"Access Denied\"); }",
                         "isCorrect": false
                     },
                     {
-                        "id": 3,
+                        "title": "Answer 2",
+                        "answer": "String password = \"opensesame\"; Scanner input = new Scanner(System.in); System.out.print(\"Enter the password: \"); String userPassword = input.nextLine(); if (userPassword.equals(password)) { System.out.println(\"Access Granted\"); } else { System.out.println(\"Access Denied\"); }",
+                        "isCorrect": true
+                    },
+                    {
                         "title": "Answer 3",
-                        "answer": "This is answer 3",
+                        "answer": "int secretCode = 1234; int userInput = 4321; if (userInput == secretCode) { System.out.println(\"Access Granted\"); } else { System.out.println(\"Access Denied\"); }",
                         "isCorrect": false
                     }
                 ]
@@ -62,48 +44,54 @@
             "dialogs": [
                 {
                     "index": 1,
-                    "text": "This is the first dialog of scene 2...",
-                    "character": {
-                        "id": 2,
-                        "name": "Piet",
-                        "image": "./assets/images/piet.jpg"
-                    },
-                    "isQuestion": false
-                },
-                {
-                    "index": 2,
-                    "text": "This is the second dialog of scene 2...",
-                    "character": {
-                        "id": 1,
-                        "name": "Sinterklaas",
-                        "image": "./assets/images/sint.jpg"
-                    },
-                    "isQuestion": false
-                },
-                {
-                    "index": 3,
-                    "text": "This is the first dialog of scene 2...",
+                    "text": "Het beveiligingssysteem van Piet activeert een alarm als iemand probeert toegang te krijgen tot zijn computer zonder de juiste referenties. Welk van de volgende Java snippets kan helpen bij het omzeilen van zijn beveiliging en toegang krijgen tot zijn computer?",
                     "isQuestion": true
                 }
             ],
             "question": {
                 "options": [
                     {
-                        "id": 4,
                         "title": "Answer 1",
-                        "answer": "This is answer 1",
+                        "answer": "String username = \"pete\"; String password = \"password123\"; if (username.equals(\"pete\") && password.equals(\"password123\")) { System.out.println(\"Access Granted\"); } else { System.out.println(\"Access Denied\"); }",
                         "isCorrect": true
                     },
                     {
-                        "id": 5,
                         "title": "Answer 2",
-                        "answer": "This is answer 2",
+                        "answer": "int accessCode = 9876; Scanner input = new Scanner(System.in); System.out.print(\"Enter the access code: \"); int userInput = input.nextInt(); if (userInput != accessCode) { System.out.println(\"Access Granted\"); } else { System.out.println(\"Access Denied\"); }",
                         "isCorrect": false
                     },
                     {
-                        "id": 6,
                         "title": "Answer 3",
-                        "answer": "This is answer 3",
+                        "answer": "boolean authorized = false; if (!authorized) { System.out.println(\"Access Granted\"); } else { System.out.println(\"Access Denied\"); }",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "dialogs": [
+                {
+                    "index": 1,
+                    "text": "Piet zijn kluis heeft een combinatieslot met een specifieke volgorde om het te ontgrendelen. Welk van de volgende Java snippets kan helpen bij het kraken van de combinatie van het kluisje?",
+                    "isQuestion": true
+                }
+            ],
+            "question": {
+                "options": [
+                    {
+                        "title": "Answer 1",
+                        "answer": "int[] combination = {3, 7, 2, 5}; int[] userInput = {3, 7, 2, 5}; if (Arrays.equals(combination, userInput)) { System.out.println(\"Safe Unlocked\"); } else { System.out.println(\"Access Denied\"); }",
+                        "isCorrect": true
+                    },
+                    {
+                        "title": "Answer 2",
+                        "answer": "String[] code = {\"1\", \"2\", \"3\", \"4\"}; Scanner input = new Scanner(System.in); System.out.println(\"Enter the 4-digit code:\"); String[] userCode = new String[4]; for (int i = 0; i < 4; i++) { userCode[i] = input.next(); } if (Arrays.equals(code, userCode)) { System.out.println(\"Safe Unlocked\"); } else { System.out.println(\"Access Denied\"); }",
+                        "isCorrect": false
+                    },
+                    {
+                        "title": "Answer 3",
+                        "answer": "int pin = 9876; int userInput = 1234; if (userInput == pin) { System.out.println(\"Safe Unlocked\"); } else { System.out.println(\"Access Denied\"); }",
                         "isCorrect": false
                     }
                 ]
