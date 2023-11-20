@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DialogBoxComponent } from '../dialog-box/dialog-box.component';
 import { GameService } from '../../_services/game.service';
+import { QuestionComponent } from '../question/question.component';
 
 @Component({
   selector: 'app-scene',
   standalone: true,
-  imports: [CommonModule, DialogBoxComponent],
+  imports: [CommonModule, QuestionComponent, DialogBoxComponent],
   templateUrl: './scene.component.html',
   styleUrls: ['./scene.component.css']
 })
