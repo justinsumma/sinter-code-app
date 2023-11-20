@@ -1,5 +1,5 @@
 <div class="options">
-    @for (answer of question?.answers; track $index) {
+    @for (answer of question?.options; track $index) {
         <div 
             (click)="selectAnswer(answer)" 
             class="option" 

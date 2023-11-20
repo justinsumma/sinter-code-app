@@ -1,4 +1,4 @@
-import { Component, ViewChild, effect } from '@angular/core';
+import { Component, EventEmitter, Output, ViewChild, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Dialog } from '../../_models/dialog';
 import { Character } from '../../_models/character';
@@ -13,10 +13,10 @@ import { GameService } from '../../_services/game.service';
   styleUrls: ['./dialog-box.component.css']
 })
 export class DialogBoxComponent {
+  @Output() showQuestionEvent = new EventEmitter();
   @ViewChild('characterComponent') characterComponent?: CharacterComponent;
   dialogInput: Dialog[] = [];
   dialogIndex: number = 1;
-  name: string = "";
   dialog: string = "";
   character: Character | null = null;
   isWritingDialog: boolean = false;
@@ -43,6 +43,11 @@ export class DialogBoxComponent {
       this.characterComponent?.show();
     }
 
+    const isQuestion = this.dialogInput.find(x => x.index === this.dialogIndex)!.isQuestion;
+    if (isQuestion) {
+      this.showQuestion();
+    }
+
     const charArray = this.dialogInput.find(x => x.index === this.dialogIndex)!.text.split('');
     charArray.forEach((char, index) => {
       setTimeout(() => {
@@ -63,5 +68,9 @@ export class DialogBoxComponent {
         this.writeDialog()
       }, 400);
     }
+  }
+
+  showQuestion() {
+    this.showQuestionEvent.emit();
   }
 }
