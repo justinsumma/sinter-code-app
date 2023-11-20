@@ -12,9 +12,12 @@ import { QuestionComponent } from '../question/question.component';
   styleUrls: ['./scene.component.css']
 })
 export class SceneComponent {
+  scene = this.gameService.getCurrentScene();
+  question: boolean = false;
+
   constructor(private gameService: GameService) { }
 
-  nextScene() {
-    this.gameService.nextScene();
+  showQuestion() {
+    this.question = true;
   }
 }

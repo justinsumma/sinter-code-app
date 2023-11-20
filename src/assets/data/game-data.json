@@ -10,11 +10,13 @@
                         "id": 1,
                         "name": "Sinterklaas",
                         "image": "./assets/images/sint.jpg"
-                    }
+                    },
+                    "isQuestion": false
                 },
                 {
                     "index": 2,
-                    "text": "This is the second dialog of scene 1..."
+                    "text": "This is the second dialog of scene 1...",
+                    "isQuestion": false
                 },
                 {
                     "index": 3,
@@ -23,9 +25,37 @@
                         "id": 2,
                         "name": "Piet",
                         "image": "./assets/images/piet.jpg"
-                    }
+                    },
+                    "isQuestion": false
+                },
+                {
+                    "index": 4,
+                    "text": "This the question of scene 1...",
+                    "isQuestion": true
                 }
-            ] 
+            ],
+            "question": {
+                "options": [
+                    {
+                        "id": 1,
+                        "title": "Answer 1",
+                        "answer": "This is answer 1",
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 2,
+                        "title": "Answer 2",
+                        "answer": "This is answer 2",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 3,
+                        "title": "Answer 3",
+                        "answer": "This is answer 3",
+                        "isCorrect": false
+                    }
+                ]
+            }
         },
         {
             "id": 2,
@@ -37,7 +67,8 @@
                         "id": 2,
                         "name": "Piet",
                         "image": "./assets/images/piet.jpg"
-                    }
+                    },
+                    "isQuestion": false
                 },
                 {
                     "index": 2,
@@ -46,7 +77,8 @@
                         "id": 1,
                         "name": "Sinterklaas",
                         "image": "./assets/images/sint.jpg"
-                    }
+                    },
+                    "isQuestion": false
                 },
                 {
                     "index": 3,
@@ -55,9 +87,32 @@
                         "id": 2,
                         "name": "Piet",
                         "image": "./assets/images/piet.jpg"
-                    }
+                    },
+                    "isQuestion": false
                 }
-            ]
+            ],
+            "question": {
+                "options": [
+                    {
+                        "id": 4,
+                        "title": "Answer 1",
+                        "answer": "This is answer 1",
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 5,
+                        "title": "Answer 2",
+                        "answer": "This is answer 2",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 6,
+                        "title": "Answer 3",
+                        "answer": "This is answer 3",
+                        "isCorrect": false
+                    }
+                ]
+            }
         }
     ]
 }

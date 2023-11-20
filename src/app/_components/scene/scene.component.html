@@ -1,4 +1,4 @@
 <div class="scene">
-    <app-question></app-question>
-    <app-dialog-box #dialogBox></app-dialog-box>
+    @if (question) { <app-question [question]="scene()!.question"></app-question> }
+    <app-dialog-box (showQuestionEvent)="showQuestion()" #dialogBox></app-dialog-box>
 </div>
