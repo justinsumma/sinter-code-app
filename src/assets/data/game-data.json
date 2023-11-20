@@ -83,12 +83,7 @@
                 {
                     "index": 3,
                     "text": "This is the first dialog of scene 2...",
-                    "character": {
-                        "id": 2,
-                        "name": "Piet",
-                        "image": "./assets/images/piet.jpg"
-                    },
-                    "isQuestion": false
+                    "isQuestion": true
                 }
             ],
             "question": {
