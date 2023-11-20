@@ -3,10 +3,16 @@
         <div 
             (click)="selectAnswer(answer)" 
             class="option" 
-            [ngClass]="{'option--inactive': (answer !== selectedAnswer && selectedAnswer !== null)}"
+            [ngClass]="{
+                'option--inactive': (answer !== selectedAnswer && selectedAnswer !== null), 
+                'option--active' : answer === selectedAnswer
+            }"
         >
             <div class="option__heading">{{ answer.title }}</div>
             <div class="option__content">{{ answer.answer }}</div>
+            @if (answer === selectedAnswer) { 
+                <div class="button" (click)="submitAnswer(answer)">Submit answer</div>
+            }
         </div>
     }
 </div>

@@ -6,12 +6,18 @@
 }
 
 .option {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     cursor: pointer;
     padding: 14px;
     border: solid 3px #845615;
     box-sizing: border-box;
     background-color: #F0CFA0;
+}
+
+.option--active {
+    cursor: default;
 }
 
 .option--inactive {
@@ -21,6 +27,16 @@
 .option__heading {
     font-weight: bold;
     line-height: 20pt;
+}
+
+.button {
+    border: solid 3px #845615;
+    background: white;
+    margin-top: auto;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
 }
 
 @media (max-width: 600px) {

@@ -20,4 +20,8 @@ export class SceneComponent {
   showQuestion() {
     this.question = true;
   }
+
+  hideQuestion() {
+    this.question = false;
+  }
 }
