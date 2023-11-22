@@ -23,17 +23,17 @@
                 "options": [
                     {
                         "title": "Answer 1",
-                        "answer": "boolean doorUnlocked = true; if (doorUnlocked) { System.out.println(\"Access Granted\"); } else { System.out.println(\"Access Denied\"); }",
+                        "answer": "boolean%20doorUnlocked%20%3D%20true%3B%0A%0Aif%20(doorUnlocked)%20%7B%0A%20%20%20%20System.out.println(%22Access%20Granted%22)%3B%0A%7D%20else%20%7B%0A%20%20%20%20System.out.println(%22Access%20Denied%22)%3B%0A%7D",
                         "isCorrect": false
                     },
                     {
                         "title": "Answer 2",
-                        "answer": "String password = \"opensesame\"; Scanner input = new Scanner(System.in); System.out.print(\"Enter the password: \"); String userPassword = input.nextLine(); if (userPassword.equals(password)) { System.out.println(\"Access Granted\"); } else { System.out.println(\"Access Denied\"); }",
+                        "answer": "String%20password%20%3D%20%22opensesame%22%3B%0A%0AScanner%20input%20%3D%20new%20Scanner(System.in)%3B%0ASystem.out.print(%22Enter%20the%20password%3A%20%22)%3B%0AString%20userPassword%20%3D%20input.nextLine()%3B%0A%0Aif%20(userPassword.equals(password))%20%7B%0A%20%20%20%20System.out.println(%22Access%20Granted%22)%3B%0A%7D%20else%20%7B%0A%20%20%20%20System.out.println(%22Access%20Denied%22)%3B%0A%7D",
                         "isCorrect": true
                     },
                     {
                         "title": "Answer 3",
-                        "answer": "int secretCode = 1234; int userInput = 4321; if (userInput == secretCode) { System.out.println(\"Access Granted\"); } else { System.out.println(\"Access Denied\"); }",
+                        "answer": "int%20secretCode%20%3D%201234%3B%0Aint%20userInput%20%3D%204321%3B%0A%0Aif%20(userInput%20%3D%3D%20secretCode)%20%7B%0A%20%20System.out.println(%22Access%20Granted%22)%3B%0A%7D%20else%20%7B%0A%20%20System.out.println(%22Access%20Denied%22)%3B%0A%7D",
                         "isCorrect": false
                     }
                 ]
@@ -52,17 +52,17 @@
                 "options": [
                     {
                         "title": "Answer 1",
-                        "answer": "String username = \"pete\"; String password = \"password123\"; if (username.equals(\"pete\") && password.equals(\"password123\")) { System.out.println(\"Access Granted\"); } else { System.out.println(\"Access Denied\"); }",
+                        "answer": "String%20username%20%3D%20%22pete%22%3B%0AString%20password%20%3D%20%22password123%22%3B%0A%0Aif%20(username.equals(%22pete%22)%20%26%26%20password.equals(%22password123%22))%20%7B%0A%20%20%20%20System.out.println(%22Access%20Granted%22)%3B%0A%7D%20else%20%7B%0A%20%20%20%20System.out.println(%22Access%20Denied%22)%3B%0A%7D",
                         "isCorrect": true
                     },
                     {
                         "title": "Answer 2",
-                        "answer": "int accessCode = 9876; Scanner input = new Scanner(System.in); System.out.print(\"Enter the access code: \"); int userInput = input.nextInt(); if (userInput != accessCode) { System.out.println(\"Access Granted\"); } else { System.out.println(\"Access Denied\"); }",
+                        "answer": "int%20accessCode%20%3D%209876%3B%0A%0AScanner%20input%20%3D%20new%20Scanner(System.in)%3B%0ASystem.out.print(%22Enter%20the%20access%20code%3A%20%22)%3B%0Aint%20userInput%20%3D%20input.nextInt()%3B%0A%0Aif%20(userInput%20%3D%3D%20accessCode)%20%7B%0A%20%20%20%20System.out.println(%22Access%20Granted%22)%3B%0A%7D%20else%20%7B%0A%20%20%20%20System.out.println(%22Access%20Denied%22)%3B%0A%7D",
                         "isCorrect": false
                     },
                     {
                         "title": "Answer 3",
-                        "answer": "boolean authorized = false; if (!authorized) { System.out.println(\"Access Granted\"); } else { System.out.println(\"Access Denied\"); }",
+                        "answer": "boolean%20authorized%20%3D%20false%3B%0A%0Aif%20(!authorized)%20%7B%0A%20%20%20%20System.out.println(%22Access%20Granted%22)%3B%0A%7D%20else%20%7B%0A%20%20%20%20System.out.println(%22Access%20Denied%22)%3B%0A%7D",
                         "isCorrect": false
                     }
                 ]
@@ -81,17 +81,17 @@
                 "options": [
                     {
                         "title": "Answer 1",
-                        "answer": "int[] combination = {3, 7, 2, 5}; int[] userInput = {3, 7, 2, 5}; if (Arrays.equals(combination, userInput)) { System.out.println(\"Safe Unlocked\"); } else { System.out.println(\"Access Denied\"); }",
+                        "answer": "int%5B%5D%20combination%20%3D%20%7B3%2C%207%2C%202%2C%205%7D%3B%0Aint%5B%5D%20userInput%20%3D%20%7B3%2C%207%2C%202%2C%205%7D%3B%0A%0Aif%20(Arrays.equals(combination%2C%20userInput))%20%7B%0A%20%20%20%20System.out.println(%22Safe%20Unlocked%22)%3B%0A%7D%20else%20%7B%0A%20%20%20%20System.out.println(%22Access%20Denied%22)%3B%0A%7D%0A",
                         "isCorrect": true
                     },
                     {
                         "title": "Answer 2",
-                        "answer": "String[] code = {\"1\", \"2\", \"3\", \"4\"}; Scanner input = new Scanner(System.in); System.out.println(\"Enter the 4-digit code:\"); String[] userCode = new String[4]; for (int i = 0; i < 4; i++) { userCode[i] = input.next(); } if (Arrays.equals(code, userCode)) { System.out.println(\"Safe Unlocked\"); } else { System.out.println(\"Access Denied\"); }",
+                        "answer": "String%5B%5D%20code%20%3D%20%7B%20%221%22%2C%20%222%22%2C%20%223%22%2C%20%224%22%20%7D%3B%0AScanner%20input%20%3D%20new%20Scanner(System.in)%3B%0A%0ASystem.out.println(%22Enter%20the%204-digit%20code%3A%22)%3B%0AString%5B%5D%20userCode%20%3D%20new%20String%5B4%5D%3B%0A%0Afor%20(int%20i%20%3D%200%3B%20i%20%3C%204%3B%20i%2B%2B)%20%7B%0A%20%20%20%20userCode%5Bi%5D%20%3D%20input.next()%3B%0A%7D%0A%0Aif%20(Arrays.equals(code%2C%20userCode))%20%7B%0A%20%20%20%20System.out.println(%22Safe%20Unlocked%22)%3B%0A%7D%20else%20%7B%0A%20%20%20%20System.out.println(%22Access%20Denied%22)%3B%0A%7D",
                         "isCorrect": false
                     },
                     {
                         "title": "Answer 3",
-                        "answer": "int pin = 9876; int userInput = 1234; if (userInput == pin) { System.out.println(\"Safe Unlocked\"); } else { System.out.println(\"Access Denied\"); }",
+                        "answer": "int%20pin%20%3D%209876%3B%0Aint%20userInput%20%3D%201234%3B%0A%0Aif%20(userInput%20%3D%3D%20pin)%20%7B%0A%20%20System.out.println(%22Safe%20Unlocked%22)%3B%0A%7D%20else%20%7B%0A%20%20System.out.println(%22Access%20Denied%22)%3B%0A%7D",
                         "isCorrect": false
                     }
                 ]

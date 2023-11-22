@@ -9,7 +9,7 @@
             }"
         >
             <div class="option__heading">{{ answer.title }}</div>
-            <div class="option__content">{{ answer.answer }}</div>
+            <div class="option__content"><pre><code>{{ answer.answer }}</code></pre></div>
             @if (answer === selectedAnswer) { 
                 <div class="button" (click)="submitAnswer(answer)">Submit answer</div>
             }
