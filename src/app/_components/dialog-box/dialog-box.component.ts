@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, ViewChild, effect } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output, ViewChild, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Dialog } from '../../_models/dialog';
 import { Character } from '../../_models/character';
@@ -12,7 +12,7 @@ import { GameService } from '../../_services/game.service';
   templateUrl: './dialog-box.component.html',
   styleUrls: ['./dialog-box.component.css']
 })
-export class DialogBoxComponent {
+export class DialogBoxComponent implements OnInit {
   @Output() showQuestionEvent = new EventEmitter();
   @ViewChild('characterComponent') characterComponent?: CharacterComponent;
   dialogInput: Dialog[] = [];
@@ -32,6 +32,14 @@ export class DialogBoxComponent {
         }, 500);
       }
     })
+  }
+  ngOnInit(): void {
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        // Perform the desired action when the "Enter" key is pressed
+        this.next();
+      }
+    });
   }
   
   writeDialog() {
