@@ -5,7 +5,7 @@
             "dialogs": [
                 {
                     "index": 1,
-                    "text": "This is the first dialog of scene 1...",
+                    "text": "Hoi Sander, ik heb vervelend nieuws. Piet heeft het cadeau gestolen dat ik aan jou wilde geven en ik heb je hulp nodig om het terug te krijgen.",
                     "character": {
                         "id": 1,
                         "name": "Sinterklaas",
@@ -15,6 +15,26 @@
                 },
                 {
                     "index": 2,
+                    "text": "Ja, ik heb het gedaan! Sinterklaas, je negeert me al jaren. Ik had iets waardevols nodig om je aandacht te krijgen. Daarom heb ik het gestolen en verborgen in mijn kluis.",
+                    "character": {
+                        "id": 2,
+                        "name": "Piet",
+                        "image": "./assets/images/piet.jpg"
+                    },
+                    "isQuestion": false
+                },
+                {
+                    "index": 3,
+                    "text": "Oh Piet, ik begrijp je frustratie, maar dit is niet de manier om ermee om te gaan. Sander, kunnen we proberen dit op te lossen door in te breken in Piet zijn huis en het cadeau terug te halen?",
+                    "character": {
+                        "id": 1,
+                        "name": "Sinterklaas",
+                        "image": "./assets/images/sint.jpg"
+                    },
+                    "isQuestion": false
+                },
+                {
+                    "index": 4,
                     "text": "Piet heeft een digitaal slot op zijn voordeur. Welk van de volgende Java snippets zou kunnen worden gebruikt om het slot te omzeilen en toegang te krijgen?",
                     "isQuestion": true
                 }
@@ -44,6 +64,36 @@
             "dialogs": [
                 {
                     "index": 1,
+                    "text": "Goed gedaan, Sander! Je hebt het slot gekraakt en we zijn een stap dichterbij het terughalen van het gestolen cadeau.",
+                    "character": {
+                        "id": 1,
+                        "name": "Sinterklaas",
+                        "image": "./assets/images/sint.jpg"
+                    },
+                    "isQuestion": false
+                },
+                {
+                    "index": 2,
+                    "text": "Jullie denken zeker dat jullie slim zijn? Mijn alarmsysteem is ondoordringbaar! Jullie komen er niet langs.",
+                    "character": {
+                        "id": 2,
+                        "name": "Piet",
+                        "image": "./assets/images/piet.jpg"
+                    },
+                    "isQuestion": false
+                },
+                {
+                    "index": 3,
+                    "text": "Dit gaat lastiger worden dan gedacht... Wat nu Sander? Kun jij een manier kunnen vinden om het alarmsysteem te omzeilen?",
+                    "character": {
+                        "id": 1,
+                        "name": "Sinterklaas",
+                        "image": "./assets/images/sint.jpg"
+                    },
+                    "isQuestion": false
+                },
+                {
+                    "index": 4,
                     "text": "Het beveiligingssysteem van Piet activeert een alarm als iemand probeert toegang te krijgen tot zijn computer zonder de juiste referenties. Welk van de volgende Java snippets kan helpen bij het omzeilen van zijn beveiliging en toegang krijgen tot zijn computer?",
                     "isQuestion": true
                 }
@@ -73,7 +123,37 @@
             "dialogs": [
                 {
                     "index": 1,
-                    "text": "Piet zijn kluis heeft een combinatieslot met een specifieke volgorde om het te ontgrendelen. Welk van de volgende Java snippets kan helpen bij het kraken van de combinatie van het kluisje?",
+                    "text": "Fantastisch, Sander! Je hebt het alarmsysteem uitgeschakeld, we moeten nu alleen nog de kluis zien te openen.",
+                    "character": {
+                        "id": 1,
+                        "name": "Sinterklaas",
+                        "image": "./assets/images/sint.jpg"
+                    },
+                    "isQuestion": false
+                },
+                {
+                    "index": 2,
+                    "text": "Jullie verspillen alleen maar tijd! Mijn kluis is onbreekbaar. Jullie zullen nooit in staat zijn om hem te kraken.",
+                    "character": {
+                        "id": 2,
+                        "name": "Piet",
+                        "image": "./assets/images/piet.jpg"
+                    },
+                    "isQuestion": false
+                },
+                {
+                    "index": 3,
+                    "text": "We geven niet op Piet. Laten we proberen om die kluis te kraken, Sander. Ik weet dat je het kan!",
+                    "character": {
+                        "id": 1,
+                        "name": "Sinterklaas",
+                        "image": "./assets/images/sint.jpg"
+                    },
+                    "isQuestion": false
+                },
+                {
+                    "index": 4,
+                    "text": "Piet zijn kluis heeft een combinatieslot met een specifieke volgorde om het te ontgrendelen. Welk van de volgende Java snippets kan helpen bij het kraken van de combinatie van de kluis?",
                     "isQuestion": true
                 }
             ],
