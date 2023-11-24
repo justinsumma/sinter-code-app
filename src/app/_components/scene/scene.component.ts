@@ -14,6 +14,7 @@ import { QuestionComponent } from '../question/question.component';
 export class SceneComponent {
   scene = this.gameService.getCurrentScene();
   question: boolean = false;
+  winScreen: boolean = false;
 
   constructor(private gameService: GameService) { }
 
@@ -21,7 +22,10 @@ export class SceneComponent {
     this.question = true;
   }
 
-  hideQuestion() {
-    this.question = false;
+  hideQuestion(correctAnswer: boolean) {
+    if(correctAnswer) {
+      this.question = false;
+      this.gameService.nextScene();
+    }
   }
 }
