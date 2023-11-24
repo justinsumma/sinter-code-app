@@ -176,6 +176,16 @@
                     }
                 ]
             }
+        },
+        {
+            "id": 4,
+            "dialogs": [
+                {
+                    "index": 1,
+                    "text": "De kluis is leeg!? Maar je vind wel een briefje met de code: 758.",
+                    "isQuestion": false
+                }
+            ]
         }
     ]
 }

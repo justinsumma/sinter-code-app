@@ -2,7 +2,6 @@ import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Question } from '../../_models/question';
 import { Answer } from '../../_models/answer';
-import { GameService } from '../../_services/game.service';
 
 // Then register the languages you need
 @Component({
@@ -13,11 +12,12 @@ import { GameService } from '../../_services/game.service';
   styleUrl: './question.component.css'
 })
 export class QuestionComponent implements OnInit {
-  @Output() hideQuestionEvent = new EventEmitter();
+  @Output() hideQuestionEvent = new EventEmitter<boolean>();
   @Input() question: Question | null = null;
   selectedAnswer: Answer | null = null;
   audio = new Audio();
-  constructor(private gameService: GameService) {}
+
+  constructor() {}
 
   ngOnInit(): void {
     this.audio = new Audio();
@@ -34,8 +34,7 @@ export class QuestionComponent implements OnInit {
 
   submitAnswer(answer: Answer) {
     if (answer.isCorrect) {
-      this.gameService.nextScene();
-      this.hideQuestionEvent.emit();
+      this.hideQuestionEvent.emit(true);
     } else {
       this.audio.play();
     }
