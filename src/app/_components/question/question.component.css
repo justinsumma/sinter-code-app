@@ -26,7 +26,12 @@
 
 .option__heading {
     font-weight: bold;
-    line-height: 20pt;
+    line-height: 32pt;
+    font-size: 16pt;
+}
+
+.option__content  {
+    font-size: 14pt;
 }
 
 .button {
@@ -44,5 +49,15 @@
         flex-direction: column;
         column-gap: 0;
         row-gap: 7px;
+    }
+
+    .option__heading {
+        font-weight: bold;
+        line-height: 20pt;
+        font-size: 12pt;
+    }
+    
+    .option__content  {
+        font-size: 12pt;
     }
 }
